@@ -13,6 +13,7 @@
 		BD8D6FEC29CC903D00FF0C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8D6FEA29CC903D00FF0C94 /* Main.storyboard */; };
 		BD8D6FEE29CC903F00FF0C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8D6FED29CC903F00FF0C94 /* Assets.xcassets */; };
 		BD8D6FF129CC903F00FF0C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8D6FEF29CC903F00FF0C94 /* LaunchScreen.storyboard */; };
+		BD8D6FFA29CC90FD00FF0C94 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = BD8D6FF929CC90FD00FF0C94 /* ReactorKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8D6FFA29CC90FD00FF0C94 /* ReactorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ReactorKitTest;
+			packageProductDependencies = (
+				BD8D6FF929CC90FD00FF0C94 /* ReactorKit */,
+			);
 			productName = ReactorKitTest;
 			productReference = BD8D6FE129CC903D00FF0C94 /* ReactorKitTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = BD8D6FD829CC903D00FF0C94;
+			packageReferences = (
+				BD8D6FF829CC90FD00FF0C94 /* XCRemoteSwiftPackageReference "ReactorKit" */,
+			);
 			productRefGroup = BD8D6FE229CC903D00FF0C94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD8D6FF829CC90FD00FF0C94 /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD8D6FF929CC90FD00FF0C94 /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD8D6FF829CC90FD00FF0C94 /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BD8D6FD929CC903D00FF0C94 /* Project object */;
 }
