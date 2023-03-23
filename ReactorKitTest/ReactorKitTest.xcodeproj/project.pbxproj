@@ -13,6 +13,10 @@
 		BD8D6FEE29CC903F00FF0C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8D6FED29CC903F00FF0C94 /* Assets.xcassets */; };
 		BD8D6FF129CC903F00FF0C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8D6FEF29CC903F00FF0C94 /* LaunchScreen.storyboard */; };
 		BD8D6FFA29CC90FD00FF0C94 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = BD8D6FF929CC90FD00FF0C94 /* ReactorKit */; };
+		BD8D6FFC29CC933800FF0C94 /* MainReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D6FFB29CC933800FF0C94 /* MainReactor.swift */; };
+		BD8D6FFF29CC940300FF0C94 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BD8D6FFE29CC940300FF0C94 /* RxCocoa */; };
+		BD8D700129CC940300FF0C94 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BD8D700029CC940300FF0C94 /* RxSwift */; };
+		BD8D700429CC956900FF0C94 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BD8D700329CC956900FF0C94 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,7 @@
 		BD8D6FED29CC903F00FF0C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD8D6FF029CC903F00FF0C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8D6FF229CC903F00FF0C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8D6FFB29CC933800FF0C94 /* MainReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8D700129CC940300FF0C94 /* RxSwift in Frameworks */,
+				BD8D700429CC956900FF0C94 /* SnapKit in Frameworks */,
+				BD8D6FFF29CC940300FF0C94 /* RxCocoa in Frameworks */,
 				BD8D6FFA29CC90FD00FF0C94 /* ReactorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +67,7 @@
 				BD8D6FE429CC903D00FF0C94 /* AppDelegate.swift */,
 				BD8D6FE629CC903D00FF0C94 /* SceneDelegate.swift */,
 				BD8D6FE829CC903D00FF0C94 /* MainViewController.swift */,
+				BD8D6FFB29CC933800FF0C94 /* MainReactor.swift */,
 				BD8D6FED29CC903F00FF0C94 /* Assets.xcassets */,
 				BD8D6FEF29CC903F00FF0C94 /* LaunchScreen.storyboard */,
 				BD8D6FF229CC903F00FF0C94 /* Info.plist */,
@@ -84,6 +93,9 @@
 			name = ReactorKitTest;
 			packageProductDependencies = (
 				BD8D6FF929CC90FD00FF0C94 /* ReactorKit */,
+				BD8D6FFE29CC940300FF0C94 /* RxCocoa */,
+				BD8D700029CC940300FF0C94 /* RxSwift */,
+				BD8D700329CC956900FF0C94 /* SnapKit */,
 			);
 			productName = ReactorKitTest;
 			productReference = BD8D6FE129CC903D00FF0C94 /* ReactorKitTest.app */;
@@ -115,6 +127,8 @@
 			mainGroup = BD8D6FD829CC903D00FF0C94;
 			packageReferences = (
 				BD8D6FF829CC90FD00FF0C94 /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				BD8D6FFD29CC940300FF0C94 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				BD8D700229CC956900FF0C94 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = BD8D6FE229CC903D00FF0C94 /* Products */;
 			projectDirPath = "";
@@ -143,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD8D6FE929CC903D00FF0C94 /* MainViewController.swift in Sources */,
+				BD8D6FFC29CC933800FF0C94 /* MainReactor.swift in Sources */,
 				BD8D6FE529CC903D00FF0C94 /* AppDelegate.swift in Sources */,
 				BD8D6FE729CC903D00FF0C94 /* SceneDelegate.swift in Sources */,
 			);
@@ -362,6 +377,22 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		BD8D6FFD29CC940300FF0C94 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		BD8D700229CC956900FF0C94 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -369,6 +400,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BD8D6FF829CC90FD00FF0C94 /* XCRemoteSwiftPackageReference "ReactorKit" */;
 			productName = ReactorKit;
+		};
+		BD8D6FFE29CC940300FF0C94 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD8D6FFD29CC940300FF0C94 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		BD8D700029CC940300FF0C94 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD8D6FFD29CC940300FF0C94 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		BD8D700329CC956900FF0C94 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD8D700229CC956900FF0C94 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
